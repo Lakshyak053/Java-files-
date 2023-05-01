@@ -1,0 +1,37 @@
+import java.util.*;
+import java.io.*;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int t = sc.nextInt();
+        while (t-- > 0) {
+            long k = sc.nextLong();
+            System.out.println(getKthNumber(k));
+        }
+    }
+
+    public static long getKthNumber(long k) {
+        long count = 0;
+        for (long i = 1; ; i++) {
+            if (!containsDigit4(i)) {
+                count++;
+            }
+            if (count == k) {
+                return i;
+            }
+        }
+    }
+
+    public static boolean containsDigit4(long num) {
+        while (num > 0) {
+            if (num % 10 == 4) {
+                return true;
+            }
+            num /= 10;
+        }
+        return false;
+    }
+}
+
+                     

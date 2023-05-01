@@ -1,0 +1,23 @@
+import java.util.Scanner;  
+public class Ques1 {
+ public static int withdraw (int a , int b){
+               Scanner in= new scanner(System,in);
+               a=in.nextInt();
+               b=in.nextInt();
+               system.out.println(b-a);
+}
+ public static int balance(int b){
+               system.out.println()
+               
+write a program to print all the character of the string in diff line when string is given by the user
+write a program to concat 2 str using concat s1 user s2 user
+ 
+java.lang package 
+
+it extends object class string buffer are safe for use by multiple threads  the method can be syncronized
+the diff between string buffer and string builder class is on the basis of syncronization the string builder class provides no guranty of syncronisation where as string buffer class
+does
+string builder class is designed for use as a replacment for string buffer in places where string buffer was being used by a single thread 
+
+use a lamda expresion that test if a number is non negative
+create a functional interface in which method will take two argumen t then create the lamda expresion that determins if 1 no is a factor of another
